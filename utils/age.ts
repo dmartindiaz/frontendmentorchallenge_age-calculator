@@ -1,7 +1,7 @@
 import Moment from 'moment';
-import { extendMoment } from 'moment-range';
+import extendMoment from 'moment-range';
 import type { TimeInterface } from "../interfaces/time"
-const moment = extendMoment(Moment as any);
+const moment = extendMoment.extendMoment(Moment as any)
 
 class Age {
     static calculate(year: number, month: number, day: number): TimeInterface {
